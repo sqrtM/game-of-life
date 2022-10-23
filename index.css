@@ -6,14 +6,21 @@
   }
 
 #page {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+
+    overflow: scroll;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+
     font-size: x-large;
      /* square font by 
     https://strlen.com/square/*/
     font-family: square, 'Courier New', Courier, monospace;
     background-color: black;
     color: white
+}
+
+#page::-webkit-scrollbar {
+  display: none;
 }
