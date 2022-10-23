@@ -1,0 +1,19 @@
+@font-face {
+    font-family: square;
+    src: url("/square.ttf");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+#page {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: x-large;
+     /* square font by 
+    https://strlen.com/square/*/
+    font-family: square, 'Courier New', Courier, monospace;
+    background-color: black;
+    color: white
+}
